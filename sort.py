@@ -20,5 +20,3 @@ def sort_list(inList):
                 checkedIndx = checkedIndx + 1
         i = i+1
     print(inList)
-
-sort_list(list(input()))
