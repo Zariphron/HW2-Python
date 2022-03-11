@@ -3,6 +3,6 @@ import time
 def calculate_time(called()):
     called()
     elapsed = time.time()
-    print(elapsed)
+    print(f'Total time {elapsed}')
 
 calculate_time()
