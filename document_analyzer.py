@@ -1,5 +1,9 @@
 def wordCounter(doc):
-    wordList = doc.replace(",", "").replace(".", "").split()
+    wordList = ""
+    if doc is str:
+        wordList = doc.replace(",", "").replace(".", "").split()
+    else:
+        return False
     wordDict = {}
     for i in wordList:
         if bool(wordDict) == True:
