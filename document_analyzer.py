@@ -43,6 +43,6 @@ def format(dictions):
 			vals.pop(vals.index(lrgest))
 		print()
 		for fiver in topFive:
-			print(fiver)
+			return fiver
 
 wordCounter()

@@ -22,7 +22,7 @@ def sort_list(inList):
                 checkedIndx = checkedIndx + 1
         i = i+1
     '''
-    print(f"Input = {inList} Output = {outList}")
+    return f"Input = {inList} Output = {outList}"
 
 '''
 sort_list([3,5,11,8,6])
