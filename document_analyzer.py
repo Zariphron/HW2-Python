@@ -5,19 +5,22 @@ def wordCounter(doc):
     else:
         return False
     wordDict = {}
-    for i in wordList:
-        if bool(wordDict) == True:
-            keyList = []
-            keyList.extend(wordDict.keys())
-            for n in keyList:
-                if i == n:
-                    wordDict[n] = wordDict.get(n) + 1
-                    break
-                elif n == keyList[-1]:
-                    wordDict.update({i: 1})
-        else:
-            wordDict.update({i: 1})
-    return format(wordDict)
+    if bool(wordList) == True:
+        for i in wordList:
+            if bool(wordDict) == True:
+                keyList = []
+                keyList.extend(wordDict.keys())
+                for n in keyList:
+                    if i == n:
+                        wordDict[n] = wordDict.get(n) + 1
+                        break
+                    elif n == keyList[-1]:
+                        wordDict.update({i: 1})
+            else:
+                wordDict.update({i: 1})
+        return format(wordDict)
+    else:
+        return False
 
 def format(dictions):
     topFive = []
