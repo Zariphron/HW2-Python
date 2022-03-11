@@ -1,8 +1,10 @@
 import time
 
-def calculate_time(called()):
+def calculate_time(called):
+    start = time.time()
     called()
-    elapsed = time.time()
-    print(f'Total time {elapsed}')
+    endT = time.time()
+    elapsed = endT - start
+    return f'Total time {elapsed}'
 
 calculate_time()
